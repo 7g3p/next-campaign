@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --prime-color: 0, 15, 255;
+  --cool-accent-1: 0, 111, 255;
+  --cool-accent-2: 0, 207, 255;
+  --warm-accent-1: 84, 0, 255;
+  --warm-accent-2: 183, 0, 255;
 }
 
 @media (prefers-color-scheme: dark) {

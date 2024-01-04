@@ -1,19 +1,16 @@
-'use client';
 import Image from 'next/image'
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Home() {
-  const router = useRouter();
-
-console.log(router);
+  
   return (
     <main>
       <h1>Main Page of the App</h1>
       <div>
         <ul>
-          <li onClick={() => router.push("/home")}>Home</li>
-          <li onClick={() => router.push("/login")}>Login</li>
-          <li onClick={() => router.push("/signup")}>Sign-up</li>
+          <Link href="/home">Home</Link><br/>
+          <Link href="/login">Login</Link><br/>
+          <Link href="/signup">Sign-Up</Link><br/>
         </ul>
       </div>
     </main>

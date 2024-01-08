@@ -11,3 +11,28 @@ export default function Home() {
     </main>
   )
 }
+
+
+/* METADATA TYPES */
+// 1. Static Metadata
+/*
+export const metadata = {
+  title: 'Home',
+};
+// Output: 
+<head>
+  <title>Head</title>
+</head>
+*/
+
+// 2. Dynamic Metadata
+/*
+export async function generateMetadata({params, searchParams}){
+  const product = await getProduct(params.id);
+  return {title: product.title};
+}
+// Output:
+<head>
+  <title>Unique Product Name</title>
+</head>
+*/
